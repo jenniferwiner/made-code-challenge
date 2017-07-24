@@ -2,22 +2,22 @@
   font-family: 'Merriweather Sans', sans;
 }
 
+.profile {
+  height: 97vh;
+}
 .header {
   background-color: rgb(54, 54, 54);
-  height: 3em;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: center;*/
 }
 
 .header div img {
   margin-left: 1em;
-  width: 1.75em;
+  margin-top: .75em;
+  width: 1.5em;
 }
 
 .header div {
   display: inline-block;
-  height: 100%;
+  /*height: %;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,26 +25,24 @@
 
 .header-text h1 {
   color: rgb(218, 218, 218);
-  font-size: 1.4em;
-  margin-left: -2em;
-  margin-bottom: 1em;
+  font-size: 1.3em;
+  margin: .6em 0 .6em -2.25em;
 }
 
 .photo-container {
   background-image: url('./images/bkg-header.jpg');
-  height: 12em;
+  height: 10em;
   box-shadow: 0 2px 12px gray;
 }
 
 .photo-container img {
-  width: 15em;
-  padding-top: 2em;
+  width: 13em;
+  padding-top: 1.75em;
 }
 
 .profile-form {
   font-size: .9em;
-  height: 100%;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding-top: 4em;
 }
@@ -56,17 +54,18 @@
 .profile-form label {
   font-weight: 400;
   color: rgb(137, 137, 137);
-  padding-top: 1em;
+  padding-top: .5em;
   width: 100%;
 
 }
 .profile-form input, .profile-form textarea {
   background-color: rgb(235, 235, 235);
+  color: rgb(160, 160, 160);
+  width: 100%;
   border: 0;
   border-radius: .7em;
   padding: 1em 0 1em .5em;
-  color: rgb(160, 160, 160);
-  width: 100%;
+  margin-top: .25em;
 }
 
 .profile-form input::placeholder, .profile-form textarea::placeholder {
@@ -78,12 +77,32 @@
 }
 
 img.save-button {
-  padding-top: .75em;
-  height: 4em;
+  margin-top: .25em;
+  width: 9em;
 }
 
 footer {
   background-color: rgb(54, 54, 54);
-  margin-top: 5em;
-  height: 2em;
+  height: 3vh;
+}
+
+/* iPhone 5, Galaxy S5*/
+@media only screen and (max-width: 360px){
+  .photo-container {
+    height: 8em;
+  }
+  .photo-container img {
+    width: 10.5em;
+    padding-top: 1.75em;
+  }
+
+
+}
+@media only screen and (max-width: 320px){
+  .profile-form {
+    font-size: .8em;
+  }
+  .profile-form textarea {
+    height: 6.5em;
+  }
 }
