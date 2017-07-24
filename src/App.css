@@ -1,5 +1,5 @@
-.App {
-
+* {
+  font-family: 'Merriweather', serif;
 }
 
 .header {
@@ -20,7 +20,6 @@
 }
 
 .header-text h1 {
-  font-family: 'Merriweather', serif;
   font-weight: 700;
   color: rgb(218, 218, 218);
   font-size: 1.75em;
@@ -37,4 +36,42 @@
 .photo-container img {
   width: 15em;
   margin-top: 2em;
+}
+
+.profile-form {
+  font-size: 1em;
+  margin-top: 4em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-form div {
+  margin-top: 1em;
+}
+
+.profile-form label {
+  font-weight: 400;
+  color: rgb(137, 137, 137);
+
+}
+.profile-form input, .profile-form textarea {
+  background-color: rgb(235, 235, 235);
+  border: 0;
+  border-radius: .7em;
+  padding: 1em 0 1em .5em;
+  color: rgb(160, 160, 160);
+  width: 22em;
+}
+.profile-form input::placeholder, .profile-form textarea::placeholder {
+  color: rgb(160, 160, 160);
+}
+
+.profile-form input:focus, .profile-form textarea:focus {
+  outline: 0;
+}
+
+.profile-form textarea {
+  height:8em;
 }
