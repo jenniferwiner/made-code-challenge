@@ -35,25 +35,26 @@
 
 .photo-container img {
   width: 15em;
-  margin-top: 2em;
+  padding-top: 2em;
 }
 
 .profile-form {
   font-size: 1em;
-  margin-top: 4em;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4em;
 }
 
-.profile-form div {
-  margin-top: 1em;
+.profile-form textarea {
+  height: 8em;
 }
 
 .profile-form label {
   font-weight: 400;
   color: rgb(137, 137, 137);
+  padding-top: 1em;
+  width: 100%;
 
 }
 .profile-form input, .profile-form textarea {
@@ -62,8 +63,9 @@
   border-radius: .7em;
   padding: 1em 0 1em .5em;
   color: rgb(160, 160, 160);
-  width: 22em;
+  width: 100%;
 }
+
 .profile-form input::placeholder, .profile-form textarea::placeholder {
   color: rgb(160, 160, 160);
 }
@@ -72,6 +74,13 @@
   outline: 0;
 }
 
-.profile-form textarea {
-  height:8em;
+img.save-button {
+  padding-top: .75em;
+  height: 4em;
+}
+
+footer {
+  background-color: rgb(54, 54, 54);
+  margin-top: 5em;
+  height: 2em;
 }
