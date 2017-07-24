@@ -95,9 +95,9 @@ footer {
     width: 10.5em;
     padding-top: 1.75em;
   }
-
-
 }
+
+/* iPhone 5 */
 @media only screen and (max-width: 320px){
   .profile-form {
     font-size: .8em;
