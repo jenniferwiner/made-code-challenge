@@ -1,14 +1,18 @@
 * {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather Sans', sans;
 }
 
 .header {
   background-color: rgb(54, 54, 54);
+  height: 3em;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
 }
 
 .header div img {
-  margin: 1em 0em 1em 1em;
-  width: 2em;
+  margin-left: 1em;
+  width: 1.75em;
 }
 
 .header div {
@@ -20,11 +24,10 @@
 }
 
 .header-text h1 {
-  font-weight: 700;
   color: rgb(218, 218, 218);
-  font-size: 1.75em;
-  margin: 0 0 0 -2em;
-  padding: .60em;
+  font-size: 1.4em;
+  margin-left: -2em;
+  margin-bottom: 1em;
 }
 
 .photo-container {
@@ -39,7 +42,7 @@
 }
 
 .profile-form {
-  font-size: 1em;
+  font-size: .9em;
   height: 100%;
   width: 80%;
   margin: 0 auto;
